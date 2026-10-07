@@ -14,4 +14,4 @@ def calculate_premium(base_rate: float, risk_factor: float, years: int) -> float
     """
     annual = base_rate * risk_factor
     total = annual * years
-    return int(total)
+    return round(total, 2)
